@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SomeView</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="login_page">
+        <div class="login_outline"></div>
+        <div class="login_background"></div>
+        <div class="version"> CORAL MULTI-SIDED PLATFORM 0.2.6.95 IQA 
+            <div class="logo_s"></div>
+        </div>
+        <section id="LoginForm" class="login_container">
+            <form action="/Account/Login" class="form-horizontal" method="post" role="form" novalidate="novalidate">
+                <input name="__RequestVerificationToken" type="hidden" value="C9N9Opx1ItCdsDK-6l_2mW3HMlp_iNZ74ySD8xElzd6Ims5jNXuG6fl3IU-B9HZ6tMA7HhqdlYZAd4y-w2o8c0dTgaVkzgt93VaPwOb06IA1">                <div class="form-group">
+                    <label class="col-md-3 control-label" for="UserName">Login:</label>
+                    <div class="col-md-9">
+                        <table id="UserName_ET" class="dxeValidStEditorTable dxeRoot_CoralMSP" errorframe="errorFrame">
+                            <tbody>
+                                <tr>
+                                    <td id="UserName_CC" class="dxeErrorFrame_CoralMSP dxeErrorFrameSys dxeNoBorderRight dxeControlsCell_CoralMSP" style="color:#ff8f44;font-family:varela_roundregular;font-size:8pt;font-weight:normal;font-style:italic;vertical-align:middle;">
+                                        <table class="dxeTextBoxSys dxeTextBox_CoralMSP dxeTextBoxDefaultWidthSys" id="UserName">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="dxic" style="width:100%;"><input class="dxeEditArea_CoralMSP dxeEditAreaSys" onfocus="ASPx.EGotFocus('UserName')" maxlength="70" data-val-length="The field Login: must be a string with a maximum length of 70." data-val-required="Login field is required" onchange="ASPx.EValueChanged('UserName')" onblur="ASPx.ELostFocus('UserName')" name="UserName" data-val-length-max="70" type="text" id="UserName_I" data-val="true"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td id="UserName_EC" class="dxeErrorCell_CoralMSP dxeErrorFrame_CoralMSP dxeErrorFrameSys dxeErrorCellSys dxeNoBorderLeft" style="color:#ff8f44;font-family:varela_roundregular;font-size:8pt;font-weight:normal;font-style:italic;padding-left:4px;vertical-align:middle;visibility:hidden;white-space:nowrap;">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-right:4px;"><img id="UserName_EI" class="images_icons_validation_alert_svg" src="/DXR.axd?r=1_37-_q7Ic" alt="" style="height:10px;width:10px;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 15px;">
+                    <label class="col-md-3 control-label" for="Password">Password:</label>
+                    <div class="col-md-9">
+                        <table id="Password_ET" class="dxeValidStEditorTable dxeRoot_CoralMSP" errorframe="errorFrame">
+                            <tbody>
+                                <tr>
+                                    <td id="Password_CC" class="dxeErrorFrame_CoralMSP dxeErrorFrameSys dxeNoBorderRight dxeControlsCell_CoralMSP" style="color:#ff8f44;font-family:varela_roundregular;font-size:8pt;font-weight:normal;font-style:italic;vertical-align:middle;">
+                                        <table class="dxeTextBoxSys dxeTextBox_CoralMSP dxeTextBoxDefaultWidthSys" id="Password">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="dxic" style="width:100%;"><input class="dxeEditArea_CoralMSP dxeEditAreaSys" onfocus="ASPx.EGotFocus('Password')" maxlength="70" data-val-length="The field Password: must be a string with a maximum length of 70." data-val-required="Password is required" onchange="ASPx.EValueChanged('Password')" onblur="ASPx.ELostFocus('Password')" name="Password" data-val-length-max="70" type="password" id="Password_I" data-val="true"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td id="Password_EC" class="dxeErrorCell_CoralMSP dxeErrorFrame_CoralMSP dxeErrorFrameSys dxeErrorCellSys dxeNoBorderLeft" style="color:#ff8f44;font-family:varela_roundregular;font-size:8pt;font-weight:normal;font-style:italic;padding-left:4px;vertical-align:middle;visibility:hidden;white-space:nowrap;">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-right:4px;"><img id="Password_EI" class="images_icons_validation_alert_svg" src="/DXR.axd?r=1_37-_q7Ic" alt="" style="height:10px;width:10px;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 15px;">
+                    <input type="submit" value="Submit" style="background-color:#808080" class="btn btn-default upperCase">
+                </div>
+                <p>
+                    <a class="left prevent-history" href="/ForgotPassword">Forgot Password?</a>
+                    <a class="right prevent-history" href="https://coralteq.zendesk.com" target="_blank">Contact Coral</a>
+                    <a class="center_link prevent-history" href="@Url.Action("Index", "Home")" class="elements">
+                        <span>Register</span>
+                    </a>
+                   
+                </p>
+                <input type="hidden" name="DXScript" id="DXScript" value="1_231,1_168,1_134,1_131,1_206,1_219,1_213,1_216,1_133,17_39,17_3,1_212,1_224,1_150,17_10,1_214,1_152,1_151,17_11,1_166,1_174,1_229,1_193,1_195,1_230,1_178,17_12,1_223,1_222,1_205,17_38,1_138,1_179,1_217,1_215,1_153,1_226,1_192,1_190,1_196,17_15,17_17,1_137,1_198,1_199,17_19,1_200,1_201,17_20,17_21,1_180,17_14,1_203,1_207,17_24,1_220,17_26,1_218,1_221,17_30,1_225,17_34,17_37,1_155,17_1,1_165,1_194,17_16,1_170,1_154,17_0,1_156,17_2,1_157,17_4,1_158,1_159,1_160,1_162,1_176,1_163,17_7,1_169,1_164,17_9,1_202,1_172,1_173,17_22,17_23,1_171,1_175,17_35,1_177,10_10,10_9,10_11,10_12,10_13,17_6,6_12,17_36"><input type="hidden" name="DXCss" id="DXCss" value="/favicon.ico?v=2,/Content/styles/css?v=_K1SQwlDvnX59autmVRmedhNSlOSPEIrKo4si20jzlA1,100_125,1_33,1_35,1_18,100_127,1_17,1_16,100_336,100_340,1_29,100_138,100_140,1_19,100_267,6_2,100_269,100_149,4_7,4_1,4_2,100_151,5_1,100_251,100_220,7_2,100_222,7_1,7_0,1_3,1_4,1_9,1_5,9_11,9_13,9_17,100_366,9_1,100_368,9_3,100_252,16_5,100_254"><input type="hidden" name="DXMVCEditorsValues" value="{&quot;UserName&quot;:null,&quot;Password&quot;:null}">
+            </form>
+           
+        </section>
+
+        <div class="copyright">© 2014-2016 Coral Technology, LLC</div>
+        
+    </div>
+</body>
+</html>
